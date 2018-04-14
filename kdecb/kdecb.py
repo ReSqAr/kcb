@@ -171,7 +171,7 @@ def execute_device(device_name):
     # change directory
     with cd(kdec_mount_point):
         print_green('executing {}'.format(bash_path))
-        subprocess.check_call(str(bash_path),shell=True)
+        subprocess.check_call('"{}"'.format(bash_path),shell=True)
         print_green('execution finished')
 
 
