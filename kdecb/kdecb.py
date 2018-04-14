@@ -179,8 +179,14 @@ def run_app():
     parser = create_parser()
     args = parser.parse_args()
     
-    print('Requested the following {} device(s): {}'.format(len(args.devices),', '.join(args.devices)))
+    if len(args.devices) > 0:
+        device_names = args.devices
+    else:
+        # empty -> all devices
+        device_names = sorted(set(kdec_list_all_devices().values()))
+        
+    print('Requested the following {} device(s): {}'.format(len(device_names),', '.join(device_names)))
     
-    for device_name in args.devices:
+    for device_name in device_names:
         execute_device(device_name)
     
