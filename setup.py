@@ -1,17 +1,17 @@
 from setuptools import setup
 
 setup(
-    name="kdecb",
-    packages=["kdecb", "kdecb.lib"],
+    name="kcb",
+    packages=["kcb", "kcb.lib"],
     version="0.2",
     description="KDE Connect bash helper",
     author="Yasin Zaehringer",
-    author_email="yasin-kdecb@yhjz.de",
-    url="https://github.com/ReSqAr/kdecb",
+    author_email="yasin-kcb@yhjz.de",
+    url="https://github.com/ReSqAr/kcb",
     keywords=["kdeconnect"],
     entry_points={
         'console_scripts': [
-            'kdecb = kdecb.__main__:main'
+            'kcb = kcb.__main__:main'
         ]},
     classifiers=[
         "Programming Language :: Python",

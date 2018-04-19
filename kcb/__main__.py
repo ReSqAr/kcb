@@ -1,8 +1,8 @@
-from kdecb import kdecb
+from kcb import kcb
 
 
 def main():
-    kdecb.run_app()
+    kcb.run_app()
 
 
 if __name__ == '__main__':

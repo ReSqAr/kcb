@@ -12,12 +12,13 @@ import pydbus # python3-pydbus
 from .lib.terminal import print_blue, print_red, print_green
 from .lib.cd import cd
 
-BASH_PATH = '~/.config/kdecb/'
+BASH_PATH = '~/.config/kcb/'
 BASH_PATH = os.path.expanduser(BASH_PATH)
 BASH_PATH = pathlib.Path(BASH_PATH)
 
 DBUS_KDECONNECT = 'org.kde.kdeconnectd'
 DBUS_KDEC_DEVICES = '/modules/kdeconnect/devices'
+
 
 session_bus = pydbus.SessionBus()
 
