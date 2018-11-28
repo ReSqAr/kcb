@@ -1,9 +1,12 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="kcb",
     packages=["kcb", "kcb.lib"],
-    version="1.0",
+    version="0.9.1",
     description="KDE Connect bash helper",
     author="Yasin Zaehringer",
     author_email="yasin.zaehringer-kcb@yhjz.de",
@@ -25,12 +28,10 @@ setup(
         "Topic :: System :: Archiving",
         "Topic :: Utilities",
     ],
-    long_description="""\
-Execute bash scripts on your smart phone's memory from your computer
-
-Execute bash scripts on sshfs mounts of smart phones using KDE Connect 
--------------------------------------
-
-This version requires Python 3 or later.
-"""
+    install_requires=[
+        "pydbus",
+    ],
+    # https://packaging.python.org/tutorials/packaging-projects/
+    long_description=long_description,
+    long_description_content_type="text/markdown",
 )
