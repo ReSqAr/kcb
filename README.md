@@ -20,7 +20,7 @@ i.e. the folders `DCIM`, `Downloads`, `Android`, etc are actually are directly v
 
 ## Example bash scripts
 
-The following is a sample bash script which backups the photo folder, OSMAnd's GPS tracks and the WhatsApp folder to `~/MySmartphone` folder.
+The following is a sample bash script which backups the photo folder, OSMAnd's GPS tracks and the WhatsApp folder to the `~/MySmartphone` folder.
 
 ```
 set -x
@@ -63,3 +63,6 @@ Assume that KDE Connect knows two smartphones named `OnePlus` and `Samsung S8`.
 - `.local/bin/kcb "Samsung S8"` executes just `Samsung S8.sh` (if it exists) 
 - `.local/bin/kcb` executes both shell scripts (if they exist)
 - `.local/bin/kcb OnePlus "Samsung S8"` executes both shell scripts (if they exist)
+
+## Contact
+

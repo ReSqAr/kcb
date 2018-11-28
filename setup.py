@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name="kcb",
     packages=["kcb", "kcb.lib"],
-    version="0.9.1",
+    version="0.9.2",
     description="KDE Connect bash helper",
     author="Yasin Zaehringer",
     author_email="yasin.zaehringer-kcb@yhjz.de",
