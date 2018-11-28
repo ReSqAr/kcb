@@ -3,28 +3,30 @@ from setuptools import setup
 setup(
     name="kcb",
     packages=["kcb", "kcb.lib"],
-    version="0.2",
+    version="1.0",
     description="KDE Connect bash helper",
     author="Yasin Zaehringer",
-    author_email="yasin-kcb@yhjz.de",
+    author_email="yasin.zaehringer-kcb@yhjz.de",
     url="https://github.com/ReSqAr/kcb",
     keywords=["kdeconnect"],
     entry_points={
         'console_scripts': [
             'kcb = kcb.__main__:main'
         ]},
+    # https://pypi.org/classifiers/
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Development Status :: 4 - Beta",
-        "Environment :: Other Environment",
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Console",
         "Intended Audience :: End Users/Desktop",
-        "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: POSIX :: Linux",
+        "Topic :: System :: Archiving",
         "Topic :: Utilities",
     ],
     long_description="""\
-Execute bash scripts on your smart phone from your computer
+Execute bash scripts on your smart phone's memory from your computer
 
 Execute bash scripts on sshfs mounts of smart phones using KDE Connect 
 -------------------------------------

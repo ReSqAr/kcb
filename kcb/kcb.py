@@ -23,6 +23,7 @@ BASH_PATH = pathlib.Path(BASH_PATH)
 DBUS_KDEC = 'org.kde.kdeconnectd'
 DBUS_KDEC_DEVICES = '/modules/kdeconnect/devices'
 
+
 #
 # code
 #
