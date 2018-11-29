@@ -7,7 +7,7 @@ setup(
     name="kcb",
     packages=["kcb", "kcb.lib"],
     version="0.9.2.1",
-    description="Execute bash scripts on top of KDEConnect's sftp mount",
+    description="Execute bash scripts on top of KDEConnect's sshfs mount",
     author="Yasin Zaehringer",
     author_email="yasin.zaehringer-kcb@yhjz.de",
     url="https://github.com/ReSqAr/kcb",

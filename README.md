@@ -1,6 +1,6 @@
 # kcb
 
-Python helper to execute bash scripts inside KDEConnect's sftp mount.
+Python helper to execute bash scripts inside KDEConnect's sshfs mount.
 The main motivation behind this helper is to backup my
 smartphone's photos and Whatsapp folders with a single command
 and without resorting to a file manager.
