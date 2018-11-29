@@ -28,7 +28,7 @@ hence the bash script must be sufficiently resilient to avoid tears.
 
 ### Example bash scripts
 
-The following is a sample bash script which backups the photo folder, OSMAnd's GPS tracks and the WhatsApp folder to the `~/MySmartphone` folder.
+The following is a sample bash script which backups the photo folder, OSMAnd's GPS tracks and the WhatsApp folder to the local `~/MySmartphone` folder.
 
 ```
 set -x
