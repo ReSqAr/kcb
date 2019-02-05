@@ -1,0 +1,23 @@
+name: kcb
+version: "0.9.3"
+summary: Execute bash scripts on top of KDEConnect's sshfs mount
+description: >
+  Python helper to execute bash scripts inside KDEConnect's sshfs mount.
+  The main motivation behind this helper is to backup my
+  smartphone's photos and Whatsapp folders with a single command
+  and without resorting to a file manager.
+  The approach however allows a whole range of possible use cases.
+
+grade: devel
+confinement: devmode
+base: core18
+
+parts:
+  kcb:
+    plugin: python
+    python-version: python3
+    source: .
+
+apps:
+  kcb:
+    command: bin/kcb
