@@ -5,6 +5,7 @@ import argparse
 import subprocess
 import pathlib
 import stat
+import xdg
 from xml.etree import ElementTree
 
 import pydbus # python3-pydbus
@@ -16,9 +17,10 @@ from .lib.cd import cd
 #
 # constants
 #
-BASH_PATH = '~/.config/kcb/'
-BASH_PATH = os.path.expanduser(BASH_PATH)
-BASH_PATH = pathlib.Path(BASH_PATH)
+BASH_PATH = xdg.XDG_CONFIG_HOME
+if not BASH_PATH:
+    BASH_PATH = os.path.expanduser('~/.config')
+BASH_PATH = pathlib.Path(BASH_PATH) / "kcb"
 
 DBUS_KDEC = 'org.kde.kdeconnectd'
 DBUS_KDEC_DEVICES = '/modules/kdeconnect/devices'
