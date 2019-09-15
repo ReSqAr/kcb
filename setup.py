@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name="kcb",
     packages=["kcb", "kcb.lib"],
-    version="0.9.3",
+    version="0.9.5",
     description="Execute bash scripts on top of KDEConnect's sshfs mount",
     author="Yasin Zaehringer",
     author_email="yasin.zaehringer-kcb@yhjz.de",
@@ -30,6 +30,7 @@ setup(
     ],
     install_requires=[
         "pydbus",
+        "psutil",
         "xdg",
     ],
     # https://packaging.python.org/tutorials/packaging-projects/
