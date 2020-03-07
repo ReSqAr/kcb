@@ -23,7 +23,7 @@ if not BASH_PATH:
     BASH_PATH = os.path.expanduser('~/.config')
 BASH_PATH = pathlib.Path(BASH_PATH) / "kcb"
 
-DBUS_KDEC = 'org.kde.org.kde.kdeconnect.daemon'
+DBUS_KDEC = 'org.kde.kdeconnect.daemon'
 DBUS_KDEC_DEVICES = '/modules/kdeconnect/devices'
 
 #
